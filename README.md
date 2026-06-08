@@ -14,4 +14,6 @@ This code file only has one useful function, "GSOA_opt(polyprimitive, s, K = (s 
 
 "polyprimitive" is a coefficient vector to determine the primitive polynomial. For instance, if we are going to construct a design with $3^2$ levels with the primitive polynomial $x^2+x+2$, then the vector should be $c(1,1,2)$. If we are going to construct a design with $3^3$ levels with the primitive polynomial $x^3+2x+1$, then the vector should be $c(1,0,2,1)$.
 
-$q$ is a number input, so the design levels are "0,\ldots,s^q-1". In the default setting, the number of levels is $s^p$. For example, 
+$q$ is a number input, so the design levels are "0,\ldots,s^q-1". In the default setting, the number of levels is $s^p$. For example, with the primitive polynomial $x^3+2x+1$ and $s=3$, the number of levels should be $3^3=27$; but setting $q=2$ generates an optimal GSOA with $3^2=9$ levels.
+
+Tian and Xu (2024) claim that the shift of the 
