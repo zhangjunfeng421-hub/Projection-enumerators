@@ -93,9 +93,9 @@ add_GF <- function(a,b,s){
 
 
 
-# A function to find the GSOA(s^p,K*(s^p-1)/(s-1),s^p,t), which is a part of mutiplication table
+# A function to construct the GSOA(s^p,K*(s^p-1)/(s-1),s^q,t), which is a part of mutiplication table
 GSOA_opt <- function(polyprimitive, s, K = (s - 1), q = (length(polyprimitive)-1), add = 0){
-  # poly_primitive is the coefficient vector of the primitive polymonial
+  # poly_primitive is the coefficient vector of the primitive polynomial
   # 1 <= K <= s-1, q <= degree(primitive polynomial)
   # add is a shift element, represented by a vector 
   p <- length(polyprimitive) - 1
